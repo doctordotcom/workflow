@@ -13,7 +13,7 @@ jobs:
     - uses: actions/setup-go@v4
 
     - name: Build
-      run: go build -v ./...
+      run: go build -v workflow/.github/workflows
 
   tests:
     # Задание "tests" зависит от задания "build" и будет выполнено после него
